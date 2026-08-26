@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Team — Careers & Open Roles</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.12), transparent 70%);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased font-sans">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 text-xl font-bold text-indigo-400">
+        <i data-lucide="sparkles" class="w-6 h-6"></i>
+        <span>TalentPortal</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#roles" class="hover:text-indigo-400 transition">Open Roles</a>
+        <a href="#why-us" class="hover:text-indigo-400 transition">Why Join Us</a>
+      </nav>
+
+      <a href="#apply" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-lg shadow-indigo-500/20">
+        Apply Now
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative pt-32 pb-16 hero-glow">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          We are actively hiring
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Help us build the next generation of products.
+        </h1>
+
+        <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto">
+          We’re looking for talented problem-solvers to join our team. Choose your track below to get started with your application.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="selectRole('uiux')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-indigo-600/20 transition">
+            <i data-lucide="palette" class="w-5 h-5"></i>
+            Apply as UI/UX Designer
+          </button>
+          <button onclick="selectRole('bizdev')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-200 font-medium px-6 py-3 rounded-xl transition">
+            <i data-lucide="trending-up" class="w-5 h-5"></i>
+            Apply for Business Development
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="roles" class="py-16 border-t border-slate-900 bg-slate-950">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Opportunities</h2>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white">Select a Track</h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-indigo-500/50 transition">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6">
+                <i data-lucide="layout" class="w-6 h-6"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">UI/UX Designer</h4>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Craft intuitive design systems, responsive interfaces, and sleek user journeys from wireframing to high-fidelity prototypes.
+              </p>
+              <ul class="text-xs text-slate-300 space-y-2 mb-8">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Wireframing & Prototyping</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Design Systems & Modern UI</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Portfolio / Case Studies required</li>
+              </ul>
+            </div>
+            <button onclick="selectRole('uiux')" class="w-full py-3 bg-indigo-600/10 border border-indigo-500/30 text-indigo-300 font-medium rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm">
+              Apply as Designer
+            </button>
+          </div>
+
+          <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-emerald-500/50 transition">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                <i data-lucide="briefcase" class="w-6 h-6"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">Business Development</h4>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Drive growth, identify strategic partnerships, source leads, and structure outbound campaigns to bring in new clients.
+              </p>
+              <ul class="text-xs text-slate-300 space-y-2 mb-8">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Client Outreach & Pipeline Strategy</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Lead Generation & Relationship Building</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Clear Acquisition Proposal required</li>
+              </ul>
+            </div>
+            <button onclick="selectRole('bizdev')" class="w-full py-3 bg-emerald-600/10 border border-emerald-500/30 text-emerald-300 font-medium rounded-lg hover:bg-emerald-600 hover:text-white transition text-sm">
+              Apply for Biz Dev
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="py-20 bg-slate-900/30 border-t border-slate-900">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Submit Candidate Application</h2>
+          <h3 class="text-3xl font-bold text-white">Candidate Details</h3>
+          <p class="text-slate-400 text-sm mt-2">Fill out the information below. We review all submissions thoroughly.</p>
+        </div>
+
+        <form 
+  id="applicationForm" 
+  action="https://api.web3forms.com/submit" 
+  method="POST" 
+  onsubmit="handleFormSubmit(event)"
+  class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl shadow-xl space-y-6">
+
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="dd8e044a-3c62-4212-ab39-bfbec6be1594" />
+
+  <!-- Subject line for your incoming recruiter emails -->
+  <input type="hidden" name="subject" value="New Job Application Submission" />
+
+  <!-- Anti-bot honeypot protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+          
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Applying For *</label>
+            <div class="grid grid-cols-2 gap-3">
+              <button 
+                type="button" 
+                id="btn-uiux" 
+                onclick="selectRole('uiux')" 
+                class="py-3 px-4 rounded-xl border border-indigo-500 bg-indigo-600/20 text-indigo-300 font-medium text-sm flex items-center justify-center gap-2 transition">
+                <i data-lucide="palette" class="w-4 h-4"></i> UI/UX Designer
+              </button>
+              <button 
+                type="button" 
+                id="btn-bizdev" 
+                onclick="selectRole('bizdev')" 
+                class="py-3 px-4 rounded-xl border border-slate-700 bg-slate-800/40 text-slate-400 font-medium text-sm flex items-center justify-center gap-2 hover:border-slate-600 transition">
+                <i data-lucide="trending-up" class="w-4 h-4"></i> Business Dev
+              </button>
+            </div>
+            <input type="hidden" id="selectedRole" name="role" value="uiux" />
+          </div>
+
+          <div>
+            <label for="fullName" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              required 
+              placeholder="e.g. Alex Kamau"
+              class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-sm"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              placeholder="alex@example.com"
+              class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-sm"
+            />
+          </div>
+
+          <div id="uiux-fields" class="space-y-6">
+            <div>
+              <label for="uiuxProjects" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                Projects You've Done / Experience *
+              </label>
+              <textarea 
+                id="uiuxProjects" 
+                name="uiuxProjects" 
+                rows="3" 
+                placeholder="Briefly describe the key web/mobile applications, prototypes, or user flows you have built..."
+                class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-sm"
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="portfolioUrl" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                Proof of Work / Portfolio Link *
+              </label>
+              <input 
+                type="url" 
+                id="portfolioUrl" 
+                name="portfolioUrl" 
+                placeholder="https://figma.com/@yourprofile or https://dribbble.com/..."
+                class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-sm"
+              />
+            </div>
+          </div>
+
+          <div id="bizdev-fields" class="space-y-6 hidden">
+            <div>
+              <label for="bizdevStrategy" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                How would you recruit and find clients? *
+              </label>
+              <textarea 
+                id="bizdevStrategy" 
+                name="bizdevStrategy" 
+                rows="4" 
+                placeholder="Share your approach to lead generation, outbound outreach, client retention, and closing deals..."
+                class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition text-sm"
+              ></textarea>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition shadow-lg shadow-indigo-600/30 text-sm flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 TalentPortal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function selectRole(role) {
+      const selectedRoleInput = document.getElementById('selectedRole');
+      const btnUiux = document.getElementById('btn-uiux');
+      const btnBizdev = document.getElementById('btn-bizdev');
+      const uiuxFields = document.getElementById('uiux-fields');
+      const bizdevFields = document.getElementById('bizdev-fields');
+      const uiuxProjects = document.getElementById('uiuxProjects');
+      const portfolioUrl = document.getElementById('portfolioUrl');
+      const bizdevStrategy = document.getElementById('bizdevStrategy');
+
+      selectedRoleInput.value = role;
+
+      if (role === 'uiux') {
+        // Highlight UI/UX button
+        btnUiux.className = "py-3 px-4 rounded-xl border border-indigo-500 bg-indigo-600/20 text-indigo-300 font-medium text-sm flex items-center justify-center gap-2 transition";
+        btnBizdev.className = "py-3 px-4 rounded-xl border border-slate-700 bg-slate-800/40 text-slate-400 font-medium text-sm flex items-center justify-center gap-2 hover:border-slate-600 transition";
+
+        // Toggle field visibility & required status
+        uiuxFields.classList.remove('hidden');
+        bizdevFields.classList.add('hidden');
+        uiuxProjects.required = true;
+        portfolioUrl.required = true;
+        bizdevStrategy.required = false;
+      } else {
+        // Highlight Biz Dev button
+        btnBizdev.className = "py-3 px-4 rounded-xl border border-emerald-500 bg-emerald-600/20 text-emerald-300 font-medium text-sm flex items-center justify-center gap-2 transition";
+        btnUiux.className = "py-3 px-4 rounded-xl border border-slate-700 bg-slate-800/40 text-slate-400 font-medium text-sm flex items-center justify-center gap-2 hover:border-slate-600 transition";
+
+        // Toggle field visibility & required status
+        bizdevFields.classList.remove('hidden');
+        uiuxFields.classList.add('hidden');
+        bizdevStrategy.required = true;
+        uiuxProjects.required = false;
+        portfolioUrl.required = false;
+      }
+
+      // Re-initialize icons in case DOM updated
+      lucide.createIcons();
+
+      // Smooth scroll to form if clicked from top
+      document.getElementById('apply').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Set initial required state
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('uiuxProjects').required = true;
+      document.getElementById('portfolioUrl').required = true;
+    });
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const role = formData.get('role');
+      const name = formData.get('fullName');
+      
+      alert(`Thank you, ${name}! Your application for the ${role === 'uiux' ? 'UI/UX Designer' : 'Business Development'} position has been submitted successfully.`);
+      event.target.reset();
+      selectRole('uiux');
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
